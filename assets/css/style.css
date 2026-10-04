@@ -383,3 +383,23 @@ section{padding:96px 0}
 .hero h1,.hero .lead,.page-hero h1,.page-hero p{text-shadow:0 2px 24px rgba(0,0,0,.45)}
 .page-hero::after{background:linear-gradient(90deg,rgba(7,18,47,.88) 0%,rgba(7,18,47,.55) 50%,rgba(7,18,47,.15) 100%)}
 .offer-grid a{display:block;margin-top:10px}
+/* Country photo cards */
+.cty-grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:14px}
+@media (max-width:1200px){.cty-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media (max-width:700px){.cty-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}}
+.cty-card{position:relative;display:block;aspect-ratio:3/4.2;border-radius:20px;overflow:hidden;background:var(--ink);color:#fff;isolation:isolate;border:1px solid rgba(255,255,255,.12)}
+.cty-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .6s ease;z-index:-2}
+.cty-card::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(7,18,47,.15) 0%,rgba(7,18,47,0) 35%,rgba(7,18,47,.92) 100%)}
+.cty-card:hover img{transform:scale(1.08)}
+.cty-card:hover{color:#fff;border-color:var(--teal)}
+.cty-region{position:absolute;top:12px;left:12px;font-size:11px;font-weight:700;letter-spacing:.02em;padding:4px 10px;border-radius:999px;background:rgba(7,18,47,.55);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.2)}
+.cty-body{position:absolute;left:14px;right:14px;bottom:14px;display:flex;flex-direction:column;gap:10px}
+.cty-body strong{font-family:var(--font-display);font-size:1.35rem;line-height:1.1}
+.cty-icons{display:flex;gap:6px}
+.cty-icons span{width:36px;height:36px;border-radius:10px;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.22);color:var(--teal)}
+.cty-go{display:flex;align-items:center;gap:6px;font-size:13px;font-weight:700;color:#C9D2E6;opacity:0;transform:translateY(4px);transition:all .25s}
+.cty-card:hover .cty-go,.cty-card:focus-visible .cty-go{opacity:1;transform:none;color:#fff}
+@media (hover:none){.cty-go{opacity:1;transform:none}}
+.dark a.cty-card,.cty-card strong{color:#fff}
+.cty-card::after{background:linear-gradient(180deg,rgba(7,18,47,.25) 0%,rgba(7,18,47,0) 30%,rgba(7,18,47,.55) 55%,rgba(7,18,47,.96) 100%)}
+.cty-body strong{text-shadow:0 2px 12px rgba(0,0,0,.5)}
