@@ -493,3 +493,5 @@ section{padding:96px 0}
 /* Visible separators between the 3 ticker ribbons */
 .ticker-band{display:flex;flex-direction:column;gap:4px;padding:4px 0;background:linear-gradient(90deg,#0ACF98,#0B4FB3)}
 .tick-row{background:#07122F;border-bottom:0}
+.tick-row+.tick-row{border-top:4px solid #0ACF98 !important}
+.ticker-band{border-top:4px solid #0B4FB3;border-bottom:4px solid #0B4FB3}
