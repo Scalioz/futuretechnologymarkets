@@ -516,3 +516,11 @@ section{padding:96px 0}
 .tick-label small{font-size:10px;letter-spacing:.04em}
 .r-bse .tick-label{background:#B71C1C}
 .r-nas .tick-label{background:#0A7D6E}
+/* Slim single-line ribbons */
+.tick-row{height:50px !important;min-height:0;overflow:hidden;align-items:stretch}
+.tick-label{flex:0 0 160px;flex-direction:row;align-items:center;justify-content:flex-start;gap:8px;padding:0 16px}
+.tick-label b{font-size:15px;line-height:1}
+.tick-label small{font-size:11px;margin:0;padding-left:8px;border-left:1px solid rgba(255,255,255,.45);line-height:1}
+.tick-feed{height:50px !important;min-height:0 !important;overflow:hidden !important;display:flex;align-items:center}
+.tick-feed .tradingview-widget-container__widget{flex:0 0 auto;width:100%}
+@media (max-width:600px){.tick-label{flex-basis:112px;padding:0 10px;gap:6px}.tick-label small{font-size:10px;padding-left:6px}}
