@@ -503,3 +503,16 @@ section{padding:96px 0}
 .tick-label{align-self:stretch}
 .tick-feed{height:auto;min-height:64px;overflow:visible;display:flex;align-items:center}
 .tick-feed .tradingview-widget-container__widget{width:100%}
+/* Ticker: option B (regular), clearly separated ribbons */
+.ticker-band{background:#FFFFFF;gap:5px;padding:5px 0;display:flex;flex-direction:column;border:0}
+.tick-row{background:#07122F;min-height:0;height:auto;border:0 !important;border-radius:0}
+.tick-row+.tick-row{border-top:0 !important}
+.tick-feed{min-height:0;height:auto}
+.tick-label{flex-basis:110px}
+/* Final ticker: 2 sleek ribbons, thin white separator */
+.ticker-band{background:#FFFFFF;gap:2px;padding:0}
+.tick-label{flex-basis:96px;padding:0 14px}
+.tick-label b{font-size:14px}
+.tick-label small{font-size:10px;letter-spacing:.04em}
+.r-bse .tick-label{background:#B71C1C}
+.r-nas .tick-label{background:#0A7D6E}
