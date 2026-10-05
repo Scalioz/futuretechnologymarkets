@@ -474,3 +474,7 @@ section{padding:96px 0}
 .live .presented .mini-logo,.sponsor-line .mini-logo{border:0;padding:0}
 .adv-bill{width:100%}
 .adv-bill{height:auto;min-height:320px}.adv-bill .adv-in{padding:34px 48px;min-height:320px}
+/* Stock ticker ribbon */
+.ticker-band{background:#0B1C46;border-bottom:1px solid rgba(255,255,255,.08);min-height:46px;overflow:hidden}
+.ticker-band .tradingview-widget-container{min-height:46px}
+.ticker-band .tradingview-widget-copyright{display:none}
