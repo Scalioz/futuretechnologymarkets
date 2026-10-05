@@ -524,3 +524,20 @@ section{padding:96px 0}
 .tick-feed{height:50px !important;min-height:0 !important;overflow:hidden !important;display:flex;align-items:center}
 .tick-feed .tradingview-widget-container__widget{flex:0 0 auto;width:100%}
 @media (max-width:600px){.tick-label{flex-basis:112px;padding:0 10px;gap:6px}.tick-label small{font-size:10px;padding-left:6px}}
+/* Single annual fee card + flow */
+.price-card{display:grid;grid-template-columns:1fr 1.3fr;gap:48px;background:var(--ink-deep);color:#fff;border-radius:28px;padding:56px}
+@media (max-width:900px){.price-card{grid-template-columns:1fr;padding:32px}}
+.price-card h3{font-size:2rem;margin:10px 0}
+.price-big{font-family:var(--font-display);font-size:clamp(2.6rem,5vw,3.6rem);font-weight:700;color:var(--teal);line-height:1.1}
+.price-big small{font-size:1.1rem;color:#C9D2E6;font-weight:500}
+.price-left p{color:#C9D2E6;margin:14px 0 24px}
+.price-feats{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:14px 24px}
+@media (max-width:600px){.price-feats{grid-template-columns:1fr}}
+.price-feats li{display:flex;gap:10px;font-size:15px;color:#E6ECF7}
+.price-feats li::before{content:"";flex:0 0 22px;height:22px;background:no-repeat center/22px url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230ACF98' stroke-width='2.6' stroke-linecap='round'%3E%3Cpath d='M5 12l5 5 9-10'/%3E%3C/svg%3E")}
+.flow{list-style:none;margin:28px 0 0;padding:0;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:14px;counter-reset:f}
+@media (max-width:1000px){.flow{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.flow li{counter-increment:f;background:var(--soft);border-radius:18px;padding:22px;display:flex;flex-direction:column;gap:6px;position:relative}
+.flow li::before{content:counter(f);width:36px;height:36px;border-radius:50%;background:var(--blue);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;margin-bottom:6px}
+.flow b{font-family:var(--font-display);font-size:1.05rem}
+.flow span{font-size:14px;color:var(--muted);line-height:1.5}
