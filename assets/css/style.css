@@ -495,3 +495,11 @@ section{padding:96px 0}
 .tick-row{background:#07122F;border-bottom:0}
 .tick-row+.tick-row{border-top:4px solid #0ACF98 !important}
 .ticker-band{border-top:4px solid #0B4FB3;border-bottom:4px solid #0B4FB3}
+.tick-row,.tick-feed{height:58px}
+/* Ticker: thin navy separators, no clipping */
+.ticker-band{background:#07122F;gap:0;padding:0;border-top:0;border-bottom:1px solid rgba(255,255,255,.14)}
+.tick-row{height:auto;min-height:64px;align-items:center;overflow:visible}
+.tick-row+.tick-row{border-top:1px solid rgba(255,255,255,.14) !important}
+.tick-label{align-self:stretch}
+.tick-feed{height:auto;min-height:64px;overflow:visible;display:flex;align-items:center}
+.tick-feed .tradingview-widget-container__widget{width:100%}
