@@ -490,3 +490,6 @@ section{padding:96px 0}
 .tick-feed{flex:1;min-width:0;height:46px;overflow:hidden}
 .tick-feed .tradingview-widget-copyright{display:none}
 @media (max-width:600px){.tick-label{flex-basis:84px;padding:0 10px}.tick-label b{font-size:13px}}
+/* Visible separators between the 3 ticker ribbons */
+.ticker-band{display:flex;flex-direction:column;gap:4px;padding:4px 0;background:linear-gradient(90deg,#0ACF98,#0B4FB3)}
+.tick-row{background:#07122F;border-bottom:0}
